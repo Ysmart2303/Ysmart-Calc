@@ -1,6 +1,40 @@
-body {
-    background: linear-gradient(135deg, #00c853 0%, #0091cc 100%);
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
+/* Estilos para a página de cálculo de média */
+
+body{
+    background-color: #89a4af;      
+    text-align: center;
+}
+
+footer{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+input{
+    padding: 5px;
+    border-radius: 100px;
+}
+
+button{
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #0056b3;
+}
+
+#sombra{
+    display: inline-block;
+    background-color: rgba(80, 221, 123, 0.384);
+    padding: 20px;
+    box-shadow: 10px 10px 5px #888888;
+    border-radius: 70px;
 }
