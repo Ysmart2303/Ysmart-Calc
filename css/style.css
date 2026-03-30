@@ -31,7 +31,7 @@ button:hover{
     background-color: #0056b3;
 }
 
-#sombra{
+.sombra{
     display: inline-block;
     background-color: rgba(80, 221, 123, 0.384);
     padding: 20px;

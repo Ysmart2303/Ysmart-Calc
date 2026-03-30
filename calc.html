@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Media Maker</title> 
+    <title>Calc Maker</title> 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -11,7 +11,7 @@
 
         <div class="sombra">
             
-                       <h1>Calculadora de Média</h1><br>
+                       <h1>Calculadora</h1><br>
 
             <label>Nota 1</label><br>
             <input type="number" id="nota1" placeholder="Ex: 8.5"><br><br>
@@ -19,14 +19,21 @@
             <label>Nota 2</label><br>
             <input type="number" id="nota2" placeholder="Ex: 7.0"><br><br>
 
-            <button onclick="calcular()">Resultado</button><br>
+            <div>
+
+            <button onclick="somar()">Soma</button><br><br>
+            <button onclick="sub()">Subtração</button><br><br>
+            <button onclick="multi()">Multiplicação</button><br><br>
+            <button onclick="divi()">Divisão</button><br><br>
+
+            </div>
 
         </div>
 
         <div>
 
-            <p>Esta afim de calcular de verdade?</p>
-            <a href="calc.html">Clique aqui</a>
+            <p>Esta afim de calcular a média?</p>
+            <a href="index.html">Clique aqui</a>
 
         </div>
 
@@ -35,6 +42,7 @@
 
 
         <script src="js/script.js"></script>
+
     </body>
     
 </html>
