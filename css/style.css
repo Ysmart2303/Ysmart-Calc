@@ -1,26 +1,38 @@
 /* Estilos para a página de cálculo de média */
 
 body{
-    background-color: #89a4af;      
+    background-color: #8fccc0;
+    font-family: Arial, sans-serif;
     text-align: center;
 }
 
-footer{
+h1{
+    color: #333;
+    text-align: center;
     margin-top: 20px;
-    padding: 10px;
-    background-color: #333;
-    color: white;
+}
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
 }
 
 input{
-    padding: 5px;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #000000;
     border-radius: 100px;
 }
 
 button{
-    padding: 5px 10px;
-    background-color: #007BFF;
-    color: white;
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -28,14 +40,14 @@ button{
 
 button:hover{
     cursor: pointer;
-    background-color: #0056b3;
+    background-color: #aeb1b4;
 }
 
 .sombra{
     display: inline-block;
-    background-color: rgba(80, 221, 123, 0.384);
+    background-color: rgba(78, 134, 93, 0.384);
     padding: 20px;
-    box-shadow: 10px 10px 5px #888888;
+    border: 1px solid #333;
     border-radius: 70px;
 }
 
