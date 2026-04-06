@@ -28,12 +28,18 @@ button{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+
+    transition: all 0.3s ease;
 }
 
 button:hover{
+    color: #000000;
     cursor: pointer;
     background-color: #aeb1b4;
+
+    transform: scale(1.1);
 }
+
 
 p{
     text-align: center;
@@ -41,7 +47,20 @@ p{
 }
 
 .sombra{
-    display: inline-block;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    flex-direction: column;
+    height: 70vh;           /* Altura total da tela */  
+    padding: 20px;
+    border-radius: 70px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: rgba(78, 134, 93, 0.384);
     padding: 20px;
     border: 1px solid #333;

@@ -27,6 +27,8 @@ input{
     border-radius: 100px;
 }
 
+/* Estilos para os botões */
+
 button{
     display: block;
     margin: 10px auto;
@@ -36,12 +38,25 @@ button{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+
+    transition: all 0.3s ease;
 }
 
 button:hover{
+    color: #000000;
     cursor: pointer;
     background-color: #aeb1b4;
+
+    transform: scale(1.1);
 }
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Estilos para a caixa de sombra */
 
 .sombra{
     display: inline-block;
@@ -49,11 +64,4 @@ button:hover{
     padding: 20px;
     border: 1px solid #333;
     border-radius: 70px;
-}
-
-/* Estilos para os butoes */
-.botoes{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
 }
