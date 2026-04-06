@@ -3,37 +3,39 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Calc Maker</title> 
-    <link rel="stylesheet" href="css/calc.css">
+    <title>Media Maker</title> 
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
     <body>
 
         <div class="sombra">
             
-                       <h1>Calculadora</h1><br>
+                       <h1>Calculadora de Média</h1><br>
 
-            <label>Primeiro Numero</label><br>
+            <label>Nome</label><br>
+            <input type="text" id="nome" placeholder="Ex: João"><br><br>
+
+            <label>Nota 1</label><br>
             <input type="number" id="nota1" placeholder="Ex: 8.5"><br><br>
 
-            <label>Segundo Numero</label><br>
+            <label>Nota 2</label><br>
             <input type="number" id="nota2" placeholder="Ex: 7.0"><br><br>
 
-            <div class="botoes">
+            <label>Nota 3</label><br>
+            <input type="number" id="nota3" placeholder="Ex: 9.0"><br><br>
 
-            <button onclick="somar()">Soma</button><br><br>
-            <button onclick="sub()">Subtração</button><br><br>
-            <button onclick="multi()">Multiplicação</button><br><br>
-            <button onclick="divi()">Divisão</button><br><br>
 
-            </div>
+           <p id="resultado"></p>
+
+            <button onclick="calcular()">Resultado</button><br>
 
         </div>
 
         <div>
 
-            <p>Esta afim de calcular a média?</p>
-            <a href="media.html">Clique aqui</a>
+            <p>Esta afim de calcular de verdade?</p>
+            <a href="calc.html">Clique aqui</a>
 
             <p>Quer brincar com Arrays?</p>
             <a href="array.html">Clique aqui</a>
@@ -47,7 +49,6 @@
         <script src="js/script.js"></script>
 
          <br><footer>&copy; Ysmart2303 / Haydex11. Todos os direitos reservados.</footer>
-
     </body>
-    
+       
 </html>
