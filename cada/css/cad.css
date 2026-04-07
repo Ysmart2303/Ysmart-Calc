@@ -1,0 +1,75 @@
+ Reset e layout geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-image: url(https://i.pinimg.com/originals/18/8a/9f/188a9f6832431a892c3d215a38256b52.jpg);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+#saida{
+    font-size: 15px;
+}
+
+#matricula, #nome{
+    width:93.3%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container{
+    background-color: rgba(255, 255, 255, 0.445);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #111010;
+}
+
+footer{
+    background-color: rgba(255, 255, 255, 0.445);
+    border-radius: 10px;
+    border: 1px solid #111010;
+    text-align: center;
+    margin-top: 20px;
+    color: #2c2c2c;
+}
+
+/* Estilo do botão */
+
+button{
+    background-image: linear-gradient(315deg, rgb(104, 214, 104) 0%, rgb(37, 167, 95) 74%);
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: #333;
+    font-size: 1.1em;
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-image: linear-gradient(315deg, rgb(0, 255, 200) 0%, rgb(104, 214, 104) 74%) !important;
+    color: aliceblue;
+    cursor: pointer;
+
+    transform: scale(1.05);
+}

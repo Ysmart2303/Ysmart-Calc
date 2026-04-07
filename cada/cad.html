@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro de Alunos</title>
+    <link rel="stylesheet" href="css/cad.css">
+</head>
+<body>
+
+    <div class="container">
+    <h1>Cadastro de Alunos</h1>
+    
+    <!-- FORM CADASTRO -->
+
+    <label>Matrícula: <input type="text" id="matricula"></label>
+    <label>Nome: <input type="text" id="nome"></label><br>
+
+    <button onclick="cadastrarAluno()">Cadastrar</button>
+    
+    <!-- LISTA -->
+    <h2>Alunos Cadastrados (<span id="totalAlunos">0</span>)</h2>
+    <ul id="listaAlunos"></ul>
+    
+    <button onclick="mostrarEstatisticas()">Estatísticas</button>
+
+    </div>
+
+    <div>
+
+        <footer>
+            <p>Desenvolvido por DS2 e EVALDO</p>
+        </footer>
+
+    </div>
+
+    <script src="/js/script_cadastro.js"></script>
+</body>
+</html>
