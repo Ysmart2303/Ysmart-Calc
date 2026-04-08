@@ -1,0 +1,133 @@
+/*reset básico*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: rgba(255, 162, 0, 0.803);
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+h2{
+    text-align:center;
+    margin:20px;
+    font-size: 2em;
+}
+
+img{
+    width:250px;
+    height:200px;
+    border-radius:10px;
+}
+
+/* cabeçalho */
+
+#cabecalho{
+    background-color:brown;
+    text-align:center;
+    padding:35px;
+}
+
+nav{
+    text-align:center;
+    background-color:chocolate;
+}
+
+.menu-item{
+    display:inline-block;
+    margin:10px;
+}
+
+.menu-item a{
+    text-decoration:none;
+    color:white;
+}
+
+.menu-item a:hover{
+
+    background-color: brown;
+    color: yellow;
+    border-radius:10px;
+    padding: 5px 10px;
+    
+    font-size:2em;
+    transition:0.3s;
+}
+
+#destaque{
+    text-align:center;
+    background-color:rgba(220,20,60,0.322);
+    padding:5px;
+    border-radius:100px;
+}   
+
+/* área de login */
+
+.login-area{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:40px;
+    
+    width:400px;
+    margin:60px auto;
+    background-color:rgba(220,20,60,0.322);
+    padding:25px;
+    border-radius:50px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.login-form{
+    display:flex;
+    flex-direction:column;
+    width:300px;
+    gap:10px;
+    margin-top:20px;
+}
+
+.login-form label{
+    font-weight:bold;
+}
+
+.login-form input{
+    padding:10px;
+    border-radius:80px;
+    border:1px solid #ccc;
+}
+
+.btn-login{
+    margin-top:15px;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    background:#d32f2f;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.btn-login:hover{
+    background:#ed4949;
+}
+
+.cadastro{
+    margin-top:15px;
+}
+
+footer{
+    text-align:center;
+    background-color:brown;
+    padding:20px;
+    margin-top:20px;
+}
+
+/* logos*/
+
+.logos{
+    width:20px;
+    height:20px;
+    margin-right:5px;
+}

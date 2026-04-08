@@ -1,0 +1,144 @@
+/*reset básico*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: rgba(255, 162, 0, 0.803);
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+/* Agas */
+
+h2{
+    text-align:center;
+    margin:20px;
+    font-size: 2em;
+}
+
+h5{
+    text-align:center;
+    margin:20px;
+    font-size: 2em;
+}
+
+
+/* corpo */
+
+
+#cabecalho{
+    background-color:brown;
+    text-align:center;
+    padding:35px;
+}
+
+nav{
+    text-align:center;
+    background-color:chocolate;
+}
+
+.menu-item{
+    display:inline-block;
+    margin:10px;
+}
+
+.menu-item a{
+    text-decoration:none;
+    color:white;
+}
+
+.menu-item a:hover{
+
+    background-color: brown;
+    color: yellow;
+    border-radius:10px;
+    padding: 5px 10px;
+    
+    font-size:2em;
+    transition:0.3s;
+}
+
+#destaque{
+    text-align:center;
+    background-color:rgba(220,20,60,0.322);
+    padding:5px;
+    border-radius:100px;
+    
+}
+
+.btn{
+    padding:5;
+    border-radius:40px;
+    background-color:#d32f2f;
+    border:none;
+}
+
+.btn a{
+    color:white;
+    text-decoration:none;
+}
+
+.btn:hover{
+    background-color:#ed4949;
+    cursor:pointer;
+}
+
+/* FAQ */
+
+#faq{
+    text-align:center;   
+}
+
+/*produtos*/
+
+.container{
+    display:flex;
+    flex-direction: column;
+    text-align: center;        
+    justify-content:space-around;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+
+
+.nome{
+    font-size: 1.5em;
+    font-weight:bold;
+    margin-bottom:10px;
+    color:black;
+}
+
+img{
+    width:250px;
+    height:200px;
+    border-radius:10px;
+}
+
+.preco{
+   background-color: yellow;
+   color:red;
+   font-size: 1.2em;
+    font-weight:bold;
+   border-radius:10px;
+   display: inline-block;
+   padding: 5px 10px;  
+}
+
+footer{
+    text-align:center;
+    background-color:brown;
+    padding:20px;
+    margin-top:20px;
+}
+
+/* logos*/
+
+.logos{
+    width:20px;
+    height:20px;
+    margin-right:5px;
+}

@@ -1,0 +1,30 @@
+Geral: 
+
+1.0: Texto do menu sublinhado de cada pagina (home, cardapio, contato e login), para o ususario saber onde está.
+2.0: Aba de informações no link "FAQ".
+  2.1: Reponde possiveis duvidas do usuario.
+3.0: Paleta de cores padronizadas em todo o site
+  3.1: Padronização entre as paginas
+  
+Na aba "Home":
+
+1.0: O titulo "promoção de Pizza X" mostras as promoções do dia.
+2.0: Preço das pizzas destacado com fundo amarelo e fonte vermelha.
+  2.1: Ajuda a identificar os valores das promoções.
+3.0: Botão "Fazer seu pedido" no fim da pagina, que leva a aba "Contato".
+  3.1: indica uma forma do usuario fazer o pedido em caso de interece.
+4.0: uso de imagens  de pizzas facilmente reconhecidas pelo usuario.
+
+Na aba "Contato":
+
+1.0: Placeholder nos campos de escritas para facil compreensão do que precia ser escrito.
+2.0: Botão "cancelar pedido" para caso o usuario desista da compra.
+3.0: Informações sobre a pizzaria caso o cliente queira entrar em contato por outras redes.
+4.0: Area de feedback para dar opniões ou fazer pedidos.
+
+Na aba "Login":
+
+1.0: Botão "limpar formulario" em caso de erro.
+2.0: Link para logar caso o usuario ja tenha uma conta.
+
+//Ainda adicionando :)

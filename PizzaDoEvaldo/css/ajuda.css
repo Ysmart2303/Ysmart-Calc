@@ -1,0 +1,125 @@
+/*reset básico*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: rgba(255, 162, 0, 0.803);
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+h2{
+    text-align:center;
+    margin:20px;
+    font-size: 2em;
+}
+
+
+
+/* corpo */
+
+
+#cabecalho{
+    background-color:brown;
+    text-align:center;
+    padding:35px;
+}
+
+nav{
+    text-align:center;
+    background-color:chocolate;
+}
+
+.menu-item{
+    display:inline-block;
+    margin:10px;
+}
+
+.menu-item a{
+    text-decoration:none;
+    color:white;
+}
+
+.menu-item a:hover{
+
+    background-color: brown;
+    color: yellow;
+    border-radius:10px;
+    padding: 5px 10px;
+    
+    font-size:2em;
+    transition:0.3s;
+}
+
+#destaque{
+    text-align:center;
+    background-color:rgba(220,20,60,0.322);
+    padding:5px;
+    border-radius:100px;
+    
+}
+
+img{
+    width:250px;
+    height:200px;
+    border-radius:10px;
+}
+
+/* FAQ */
+
+.corpo{
+    width:500px;
+    margin:60px auto;
+    background-color:rgba(220,20,60,0.322);
+    padding:25px;
+    border-radius:50px;
+    box-shadow:10px rgba(0,0,0,0.1);
+    
+    /*background-color:rgba(220,20,60,0.322);
+    padding:5px;
+    border-radius:100px;
+    text-align:center;*/    
+    
+}
+
+.faq{
+    justify-content:center;
+}
+
+.faq-questao{
+    text-align:center;
+}
+
+.problema{
+    font-size: 1.5em;
+    font-weight:bold;
+    margin-bottom:10px;
+    color: white;
+}
+
+.resposta{
+   background-color: ;
+   color:white;
+   font-size: 20px;
+   border-radius: ;
+   display: inline-block;
+   padding: 5px 10px;  
+}  
+
+footer{
+    text-align:center;
+    background-color:brown;
+    padding:20px;
+    margin-top:20px;
+}
+
+/* logos*/
+
+.logos{
+    width:20px;
+    height:20px;
+    margin-right:5px;
+}

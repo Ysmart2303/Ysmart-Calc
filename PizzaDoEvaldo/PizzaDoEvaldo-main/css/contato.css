@@ -1,0 +1,134 @@
+/* Base */
+
+body{
+    background-color: rgba(255, 162, 0, 0.803);
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    margin: 0;
+}
+
+h2{
+    text-align:center;
+    margin:20px;
+    font-size: 2em;
+}
+
+img{
+    width:250px;
+    height:200px;
+    border-radius:10px;
+}
+
+/* cabeçalho */
+
+#cabecalho{
+    background-color:brown;
+    text-align:center;
+    padding:35px;
+}
+
+nav{
+    text-align:center;
+    background-color:chocolate;
+}
+
+.menu-item{
+    display:inline-block;
+    margin:10px;
+}
+
+.menu-item a{
+    text-decoration:none;
+    color:white;
+}
+
+.menu-item a:hover{
+
+    background-color: brown;
+    color: yellow;
+    border-radius:10px;
+    padding: 5px 10px;
+    
+    font-size:2em;
+    transition:0.3s;
+}
+
+/* Contato */
+
+.contato{
+    width:400px;
+    margin:60px auto;
+    background-color:rgba(220,20,60,0.322);
+    padding:25px;
+    border-radius:50px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.contato h2{
+    text-align:center;
+}
+
+label{
+    font-weight:bold;
+}
+
+input, textarea{
+    width:95.5%;
+    padding:8px;
+    margin:8px 0 15px 0;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+.info{
+    margin-top:20px;
+    font-size:14px;
+    color: white;
+}
+
+.formulario label{
+    font-weight:bold;
+}
+
+.formulario input{
+    padding:10px;
+    border-radius:80px;
+    border:1px solid #ccc;
+}
+
+/* botão */
+
+.btn{
+    padding:10px 12em;
+    border-radius:40px;
+    background-color:#d32f2f;
+    color: white;
+    border:none;
+}
+
+.btn a{
+    color:white;
+    text-decoration:none;
+}
+
+.btn:hover{
+    background-color:#ed4949;
+    cursor:pointer;
+}
+
+
+
+footer{
+    text-align:center;
+    background-color:brown;
+    padding:20px;
+    margin-top:20px;
+}
+
+/* logos*/
+
+.logos{
+    width:20px;
+    height:20px;
+    margin-right:5px;
+}
