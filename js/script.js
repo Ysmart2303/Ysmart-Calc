@@ -20,9 +20,12 @@ function calcular() {
 
 //Calculadora
 
+let historico = [];
+
 function somar() {
     let nota1 = parseFloat(document.getElementById('nota1').value);
     let nota2 = parseFloat(document.getElementById('nota2').value);
+    historico.push(nota1 + nota2);
     
     alert("Soma é " + (nota1 + nota2))
 }
@@ -30,6 +33,7 @@ function somar() {
 function sub() {
     let nota1 = parseFloat(document.getElementById('nota1').value);
     let nota2 = parseFloat(document.getElementById('nota2').value);
+    historico.push(nota1 - nota2);
     
     alert("Subtração é " + (nota1 - nota2))
 }
@@ -37,6 +41,7 @@ function sub() {
 function multi() {
     let nota1 = parseFloat(document.getElementById('nota1').value);
     let nota2 = parseFloat(document.getElementById('nota2').value);
+    historico.push(nota1 * nota2);
     
     alert("Multiplicação é " + (nota1 * nota2))
 }
@@ -44,6 +49,13 @@ function multi() {
 function divi() {
     let nota1 = parseFloat(document.getElementById('nota1').value);
     let nota2 = parseFloat(document.getElementById('nota2').value);
+    historico.push(nota1 / nota2);
     
     alert("Divisão é " + (nota1 / nota2))
+}
+
+//Historico
+
+function mostrarHistorico() {
+    alert("Historico: " + historico.join(", "));
 }
