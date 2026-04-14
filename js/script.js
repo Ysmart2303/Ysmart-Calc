@@ -23,39 +23,94 @@ function calcular() {
 let historico = [];
 
 function somar() {
-    let nota1 = parseFloat(document.getElementById('nota1').value);
-    let nota2 = parseFloat(document.getElementById('nota2').value);
-    historico.push(nota1 + nota2);
-    
-    alert("Soma é " + (nota1 + nota2))
+    let n1 = parseFloat(document.getElementById('n1').value);
+    let n2 = parseFloat(document.getElementById('n2').value);
+    let n3 = (n1 + n2)
+
+    if (!n1 || !n2) {
+        alert("Por favor, insira números válidos.");
+        return;
+    }
+
+    let  resu = document.getElementById('resultado');
+    resultado.textContent = ` Resultado da soma é: ${n1 + n2}`;
+
+    if (historico.includes(n3)) {
+        console.log("O resultado já existe no histórico.");
+    } else{ 
+        historico.push(n3);
+    }
 }
 
 function sub() {
-    let nota1 = parseFloat(document.getElementById('nota1').value);
-    let nota2 = parseFloat(document.getElementById('nota2').value);
-    historico.push(nota1 - nota2);
-    
-    alert("Subtração é " + (nota1 - nota2))
+    let n1 = parseFloat(document.getElementById('n1').value);
+    let n2 = parseFloat(document.getElementById('n2').value);
+    let n3 = (n1 - n2)
+
+    if (!n1 || !n2) {
+        alert("Por favor, insira números válidos.");
+        return;
+    }
+
+    let  resu = document.getElementById('resultado');
+    resultado.textContent = ` Resultado da subtração é: ${n3}`;
+
+    if (historico.includes(n3)) {
+        console.log("O resultado já existe no histórico.");
+    } else{ 
+        historico.push(n3);
+    }
 }
 
 function multi() {
-    let nota1 = parseFloat(document.getElementById('nota1').value);
-    let nota2 = parseFloat(document.getElementById('nota2').value);
-    historico.push(nota1 * nota2);
-    
-    alert("Multiplicação é " + (nota1 * nota2))
+    let n1 = parseFloat(document.getElementById('n1').value);
+    let n2 = parseFloat(document.getElementById('n2').value);
+    let n3 = (n1 * n2)
+
+    if (!n1 || !n2) {
+        alert("Por favor, insira números válidos.");
+        return;
+    }
+
+    if (historico.includes(n3)) {
+        console.log("O resultado já existe no histórico.");
+    } else{ 
+        historico.push(n3);
+    }
+
+    let  resu = document.getElementById('resultado');
+    resultado.textContent = ` Resultado da multiplicação é: ${n3}`;
 }
 
 function divi() {
-    let nota1 = parseFloat(document.getElementById('nota1').value);
-    let nota2 = parseFloat(document.getElementById('nota2').value);
-    historico.push(nota1 / nota2);
-    
-    alert("Divisão é " + (nota1 / nota2))
+    let n1 = parseFloat(document.getElementById('n1').value);
+    let n2 = parseFloat(document.getElementById('n2').value);
+    let n3 = (n1 / n2)
+
+    if (!n1 || !n2) {
+        alert("Por favor, insira números válidos.");
+        return;
+    }
+    historico.push(n3);
+
+    let resultado = document.getElementById('resultado');
+    resultado.textContent = ` Resultado da divisão é: ${n3}`;
 }
 
 //Historico
 
 function mostrarHistorico() {
     alert("Historico: " + historico.join(", "));
+}
+
+function limparHistorico() {
+    historico = [];
+    alert("Histórico limpo!");
+}
+
+//Limpar resultado
+
+function limparResultado() {
+    let resultado = document.getElementById('resultado');
+    resultado.textContent = "Resultado:";
 }

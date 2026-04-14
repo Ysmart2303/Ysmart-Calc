@@ -14,10 +14,10 @@
                        <h1>Calculadora</h1><br>
 
             <label>Primeiro Numero</label><br>
-            <input type="number" id="nota1" placeholder="Ex: 8.5"><br><br>
+            <input type="number" id="n1" placeholder="Ex: 8.5"><br><br>
 
             <label>Segundo Numero</label><br>
-            <input type="number" id="nota2" placeholder="Ex: 7.0"><br><br>
+            <input type="number" id="n2" placeholder="Ex: 7.0"><br><br>
 
             <div class="botoes">
 
@@ -28,12 +28,20 @@
 
             </div>
             
+            <div id ="resultado-container">
+            <p id="resultado">Resultado:</p>
+            </div>
+
+            <div id="limparResultado">
+                <button onclick="limparResultado()">Limpar Resultado</button>                   
+            </div>
 
         </div>
         
-        <div>
+        <div class="historico">
 
-            <button onclick="mostrarHistorico()">Historico</button><br><br>
+            <button onclick="mostrarHistorico()">Historico</button>
+            <button onclick="limparHistorico()">Limpa Histórico</button><br><br>
 
         </div><br><br><br><br><br><br>
 

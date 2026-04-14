@@ -1,4 +1,4 @@
-/* Estilos para a página de cálculo de média */
+/* Estilos para a página de cálculo */
 
 body{
     background-color: #8fccc0;
@@ -40,6 +40,9 @@ button{
     cursor: pointer;
 
     transition: all 0.3s ease;
+
+    width: 115px;
+    height: auto;
 }
 
 button:hover{
@@ -64,4 +67,53 @@ button:hover{
     padding: 20px;
     border: 1px solid #333;
     border-radius: 70px;
+}
+
+/* Estilos para o resultado */
+
+p{
+    font-size: 18px;
+    color: #000000;
+    margin-top: 20px;
+}
+
+#resultado-container{
+    display: inline-block;
+    
+    padding: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+/* Estilos para o histórico */
+
+.historico{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 70px;
+    margin-top: 20px;
+}
+
+/*details*/
+
+details{
+    display: inline-block;
+    background-color: rgba(78, 134, 93, 0.384);
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 70px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+details summary{
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+}
+
+details[open] summary{
+    color: #333;
 }
