@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aura Maker</title> 
+    <link rel="stylesheet" href="">
+</head>
+
+    <body>
+
+        <div>
+            <input type="text" placeholder="Nome">
+            <input type="text" placeholder="Sigma ou Beta">
+
+            <button onclick="gerarAura()">Gerar Aura</button>
+        </div>
+
+        <script>
+            function gerarAura() {
+                const nome = document.querySelector('input[placeholder="Nome"]').value;
+                const tipo = document.querySelector('input[placeholder="Sigma ou Beta"]').value.toLowerCase();
+
+                if (tipo === 'sigma') {
+                    alert(`A aura de ${nome} é Sigma!`);
+                } else if (tipo === 'beta') {
+                    alert(`A aura de ${nome} é Beta!`);
+                } else {
+                    alert('Por favor, insira "Sigma" ou "Beta" para o tipo de aura.');
+                }
+            }
+        </script>
+
+         <br><footer>&copy; Ysmart2303 / Haydex11. Todos os direitos reservados.</footer>
+    </body>
+       
+</html>

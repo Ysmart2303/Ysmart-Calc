@@ -26,19 +26,20 @@ function somar() {
     let n1 = parseFloat(document.getElementById('n1').value);
     let n2 = parseFloat(document.getElementById('n2').value);
     let n3 = (n1 + n2)
+    let calc = `${n1} + ${n2} = ${n3}`;
 
-    if (!n1 || !n2) {
+    if (!n1 || !n2) {   // Verifica se os valores são válidos
         alert("Por favor, insira números válidos.");
         return;
     }
 
-    let  resu = document.getElementById('resultado');
-    resultado.textContent = ` Resultado da soma é: ${n1 + n2}`;
+    let  resu = document.getElementById('resultado'); // Obtém o elemento de resultado
+    resultado.textContent = ` Resultado da soma é: ${n3}`; // Exibe o resultado da soma
 
-    if (historico.includes(n3)) {
+    if (historico.includes(calc)) { // Verifica se o cálculo já existe no histórico
         console.log("O resultado já existe no histórico.");
     } else{ 
-        historico.push(n3);
+        historico.push(calc);
     }
 }
 
@@ -46,6 +47,7 @@ function sub() {
     let n1 = parseFloat(document.getElementById('n1').value);
     let n2 = parseFloat(document.getElementById('n2').value);
     let n3 = (n1 - n2)
+    let calc = `${n1} - ${n2} = ${n3}`;
 
     if (!n1 || !n2) {
         alert("Por favor, insira números válidos.");
@@ -55,10 +57,10 @@ function sub() {
     let  resu = document.getElementById('resultado');
     resultado.textContent = ` Resultado da subtração é: ${n3}`;
 
-    if (historico.includes(n3)) {
+    if (historico.includes(calc)) {
         console.log("O resultado já existe no histórico.");
     } else{ 
-        historico.push(n3);
+        historico.push(calc);
     }
 }
 
@@ -66,16 +68,18 @@ function multi() {
     let n1 = parseFloat(document.getElementById('n1').value);
     let n2 = parseFloat(document.getElementById('n2').value);
     let n3 = (n1 * n2)
+    let calc = `${n1} * ${n2} = ${n3}`;
+
 
     if (!n1 || !n2) {
         alert("Por favor, insira números válidos.");
         return;
     }
 
-    if (historico.includes(n3)) {
+    if (historico.includes(calc)) {
         console.log("O resultado já existe no histórico.");
     } else{ 
-        historico.push(n3);
+        historico.push(calc);
     }
 
     let  resu = document.getElementById('resultado');
@@ -86,12 +90,19 @@ function divi() {
     let n1 = parseFloat(document.getElementById('n1').value);
     let n2 = parseFloat(document.getElementById('n2').value);
     let n3 = (n1 / n2)
+    let calc = `${n1} ÷ ${n2} = ${n3}`;
 
     if (!n1 || !n2) {
         alert("Por favor, insira números válidos.");
         return;
     }
-    historico.push(n3);
+
+
+    if (historico.includes(calc)) {
+        console.log("O resultado já existe no histórico.");
+    } else{ 
+        historico.push(calc);
+    }
 
     let resultado = document.getElementById('resultado');
     resultado.textContent = ` Resultado da divisão é: ${n3}`;
@@ -100,7 +111,7 @@ function divi() {
 //Historico
 
 function mostrarHistorico() {
-    alert("Historico: " + historico.join(", "));
+    alert("Historico: " + historico.join(" // "));
 }
 
 function limparHistorico() {
